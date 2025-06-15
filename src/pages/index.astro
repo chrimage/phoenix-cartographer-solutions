@@ -8,9 +8,182 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Phoenix Cartographer Solutions</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+				line-height: 1.6;
+				color: #333;
+			}
+			
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+			
+			header {
+				background: linear-gradient(135deg, #2c3e50, #3498db);
+				color: white;
+				padding: 1rem 0;
+			}
+			
+			.header-content {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			
+			.logo {
+				font-size: 1.5rem;
+				font-weight: bold;
+			}
+			
+			nav ul {
+				display: flex;
+				list-style: none;
+				gap: 2rem;
+			}
+			
+			nav a {
+				color: white;
+				text-decoration: none;
+				transition: opacity 0.3s;
+			}
+			
+			nav a:hover {
+				opacity: 0.8;
+			}
+			
+			.hero {
+				background: linear-gradient(135deg, #34495e, #2c3e50);
+				color: white;
+				padding: 6rem 0;
+				text-align: center;
+			}
+			
+			.hero h1 {
+				font-size: 3rem;
+				margin-bottom: 1rem;
+			}
+			
+			.hero p {
+				font-size: 1.2rem;
+				margin-bottom: 2rem;
+				opacity: 0.9;
+			}
+			
+			.cta-button {
+				display: inline-block;
+				background: #e74c3c;
+				color: white;
+				padding: 12px 30px;
+				text-decoration: none;
+				border-radius: 5px;
+				font-weight: bold;
+				transition: background 0.3s;
+			}
+			
+			.cta-button:hover {
+				background: #c0392b;
+			}
+			
+			.services {
+				padding: 4rem 0;
+				background: #f8f9fa;
+			}
+			
+			.services h2 {
+				text-align: center;
+				margin-bottom: 3rem;
+				font-size: 2.5rem;
+				color: #2c3e50;
+			}
+			
+			.services-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+			}
+			
+			.service-card {
+				background: white;
+				padding: 2rem;
+				border-radius: 10px;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+				text-align: center;
+			}
+			
+			.service-card h3 {
+				color: #2c3e50;
+				margin-bottom: 1rem;
+			}
+			
+			footer {
+				background: #2c3e50;
+				color: white;
+				text-align: center;
+				padding: 2rem 0;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header>
+			<div class="container">
+				<div class="header-content">
+					<div class="logo">Phoenix Cartographer Solutions</div>
+					<nav>
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero" id="home">
+				<div class="container">
+					<h1>Mapping Your Success</h1>
+					<p>Professional cartography and geographic information solutions for modern businesses</p>
+					<a href="#contact" class="cta-button">Get Started</a>
+				</div>
+			</section>
+
+			<section class="services" id="services">
+				<div class="container">
+					<h2>Our Services</h2>
+					<div class="services-grid">
+						<div class="service-card">
+							<h3>Digital Mapping</h3>
+							<p>Create precise digital maps tailored to your specific needs using cutting-edge GIS technology.</p>
+						</div>
+						<div class="service-card">
+							<h3>Spatial Analysis</h3>
+							<p>Comprehensive spatial data analysis to help you make informed decisions based on geographic insights.</p>
+						</div>
+						<div class="service-card">
+							<h3>Custom Cartography</h3>
+							<p>Beautiful, professional maps designed for presentations, reports, and publications.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<p>&copy; 2024 Phoenix Cartographer Solutions. All rights reserved.</p>
+			</div>
+		</footer>
 	</body>
 </html>
