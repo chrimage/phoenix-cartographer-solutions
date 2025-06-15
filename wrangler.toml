@@ -1,0 +1,6 @@
+name = "phoenix-cartographer-solutions"
+compatibility_date = "2025-06-14"
+main = "dist/_worker.js"
+
+[env.production]
+name = "phoenix-cartographer-solutions"
